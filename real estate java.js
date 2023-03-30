@@ -47,6 +47,7 @@ let front=document.querySelector("#front");
  let cancel=document.querySelector(".cancel");
  let callingUs=document.querySelector(".callingUs");
  let calling=document.querySelector("#calling");
+ let close=document.querySelector(".close");
 crossbutton.addEventListener('click', crossfun);
 function crossfun(e) {
     head.classList.remove("remove-head");
@@ -109,7 +110,7 @@ function fun2(e) {
     search2.classList.toggle("remove-search");
 };
 let mid = document.querySelector(".middle");
-mid.style.backgroundImage = `url(https://images-cdn.listingloop.com.au/images/Real-Estate-QLD-Best-Suburbs-for-a-Growing-Family.jpg)`;
+// mid.style.backgroundImage = `url(https://images-cdn.listingloop.com.au/images/Real-Estate-QLD-Best-Suburbs-for-a-Growing-Family.jpg)`;
 const imgArr = ["https://www.realestate.com.au/blog/images/1280x720-fit,progressive/2020/02/03121357/capi_46bd85def170a7dd6d3b0c57fa068127_e41219c3b1a3ba745b024376fb12a2d9.jpeg", "https://res.akamaized.net/domain/image/upload/t_web/v1645404980/9_Emo_Road_Malvern_East_facade_echpsq.jpg", "https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/web_lrg-6a0669359ad482b10475.webp", "https://www.realestate.com.au/blog/images/1280x720-fit,progressive/2019/12/26100120/capi_3ec579742973d0eaf9cd1cfd9f226d70_26f020098e8ad7c315d4065cf36c58cc.jpeg", "https://media.istockphoto.com/id/174767378/photo/suburban-family-home.jpg?s=612x612&w=0&k=20&c=hOvdqYCArfwp2NoUaaebneoBTdrz4eGQmfvDXfw2AIk="];
 // let count = 0;
 let randomImageUrl;
@@ -265,9 +266,9 @@ callingUs.addEventListener("click",function(){
     //   bookOverlay.classList.toggle("overlay-book");
       calling.classList.toggle("remove");
     //   bookOverlay.classList.toggle("overlay-book");
-    body.classList.add("stop-scrolling");
+    // body.classList.add("stop-scrolling");
   }  );
-  
+
 
     
   function toggleButton(){
@@ -391,5 +392,7 @@ okay.addEventListener("click",function(){
 )
 
 
-
+close.addEventListener("click",function(){
+    calling.classList.toggle("remove");
+})
 
